@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/main.css">
+	<title>Dash</title>
+</head>
+
+<body>
+    <h1>All Departments</h1>
+
+    <ul>
+        <% departments.forEach(department => { %>
+            <li>
+                <strong><%= department.Dept_Name %></strong>
+                <p> <%= department.Dept_Name %></p>
+                <p>Location: <%= department.Dept_Location %></p>
+                <p>HOD: <%= department.HOD %></p>
+                <p>HOD Start Date: <%= department.HOD_Start %></p>
+
+            </li>
+        <% }); %>
+    </ul>
+</body>
+
+</html>
